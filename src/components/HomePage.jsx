@@ -1,13 +1,13 @@
 import NavBar from "./NavBar";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Committees from "./Committees";
+import CommitteesHead from "./Committees_Header";
 
 function HomePage() {
   return (
     <>
       <NavBar />
-      <Committees />
+      <CommitteesHead />
       {/* <div className="App-header">
         <h1>Welcome to MUN-IITI Homepage</h1>
       </div> */}

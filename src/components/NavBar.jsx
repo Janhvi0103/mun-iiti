@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function NavBar() {
   return (
     <header>
-      <div className="nav-bar">
+      <div className="nav-bar bg-transparent relative z-1000">
         <a className="element">Home</a>
         <a className="element">About Us</a>
         <a className="element">Apply</a>
