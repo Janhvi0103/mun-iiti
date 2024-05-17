@@ -5,7 +5,7 @@ export default function Committees(){
         <>
             {/* <NavBar/> */}
 
-            <img src={headImg} alt="header" />
+            <img src={headImg} alt="header" className=""/>
         </>
     )
 }
