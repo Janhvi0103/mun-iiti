@@ -6,7 +6,7 @@ import '../index.css';
 export default function Committees(){
     return (
         <>
-            {/* <NavBar/> */}
+            <NavBar/>
             <div className="w-[100vw] h-[40vh]">
                 <img src={headImg} alt="head" className="h-[100%] w-full bg-center brightness-50 object-cover" />
                 <div id="heading" className="absolute left-[23vw] shadow-3xl font-semibold brightness-105 text-white top-[25vh] text-7xl">COMMITTEES 2024</div>

@@ -1,5 +1,5 @@
-import react from "react";
-import reactdom from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavBar() {

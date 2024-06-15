@@ -8,9 +8,9 @@ function HomePage() {
     <>
       <NavBar />
       <CommitteesHead />
-      {/* <div className="App-header">
+      <div className="App-header">
         <h1>Welcome to MUN-IITI Homepage</h1>
-      </div> */}
+      </div>
     </>
   );
 }
