@@ -1,0 +1,208 @@
+.teambg {
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -100;
+  /* background:linear-gradient(to right,rgb(32, 33, 33),rgb(88, 210, 255)) */
+  background-color: #022b43;
+  /* border-radius: 40px; */
+}
+.intro {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.introcontent {
+  width: 85%;
+  text-align: justify;
+  /* border: 2px solid green; */
+  font-size: 18px;
+  padding: 25px;
+}
+.headingteam:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 14px;
+}
+
+.card {
+  position: relative;
+  width: 225px;
+  height: 254px;
+  /* background: #f00; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-image: url("https://t4.ftcdn.net/jpg/02/24/86/95/360_F_224869519_aRaeLneqALfPNBzg0xxMZXghtvBXkfIA.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  /* box-shadow: -10px -15px 10px 2px rgb(0, 0, 0); */
+  /* box-shadow: 10px 10px 10px 2px rgb(0, 0, 0); */
+  /* animation: glow 1.5s infinite alternate; */
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #d94625, 0 0 10px #f28627, 0 0 10px #0d0d0d,
+      0 0 10px #3f3d73;
+  }
+  100% {
+    box-shadow: 0 0 15px #d94625, 0 0 15px #f28627, 0 0 15px rgba(0, 0, 0, 0.9),
+      0 0 15px #733d3d;
+  }
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: 5px;
+  bottom: 5px;
+  width: 105%;
+  height: 105%;
+  /* background: linear-gradient(205deg,#D94625,#A63D33,#0D0D0D,#733D3D,#F28627); */
+  z-index: -10;
+  /* filter: blur(5px); */
+
+  border-radius: 20px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: scaling 1s linear infinite alternate; */
+}
+@keyframes scaling {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.03;
+  }
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(360deg,#03a9f4,#ff0058); */
+  /* filter: blur(30px); */
+  /* z-index: -20; */
+  border: 2px solid black;
+  border-radius: 20px;
+  z-index: -10;
+}
+
+.card b {
+  position: absolute;
+  inset: 0px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.card img {
+  position: absolute;
+  z-index: 3;
+  scale: 0.8;
+  opacity: 0.25;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  scale: 0.5;
+  opacity: 0.9;
+  transform: translateY(-70px);
+}
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.content .title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.content .title span {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.content .sci {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1px;
+  margin-left: 50px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li .fa-brands {
+  width: 14px;
+}
+
+.sci li .fa-facebook {
+  width: 10px;
+}
+
+.sci li a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(5, 5, 5, 0.5);
+  background: rgba(255, 255, 255, 0.8);
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  fill: currentColor;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
