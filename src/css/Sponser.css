@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    background: white;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.sponser-bg {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%; 
+    height: 500px;
+    background: url('http://mun.iiti.ac.in/assets/img/bg/un-hall.jpg') no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    overflow: hidden; 
+}
+
+.sponser-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@keyframes comein {
+    0%{
+        transform: translateX(350px);
+        opacity: 0;
+    }100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.sponsors-title {
+    position: relative;
+    cursor: default;
+    animation: 0.4s comein forwards;
+}
+
+.sponsors-title h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.logo {
+    z-index: 1;
+}
+
+.mun-logo {
+    height: 200px;
+    width: 200px;
+    animation: 0.4s comein forwards;
+}
+
+.current-sponsors {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.current-sponsors h2 {
+    color: #000000;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+
+.current-sponsors h2:hover {
+    border-bottom:4px solid red ;
+}
+
+.current-sponsors p {
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 1rem 3rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.present-box {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.sponsor-box {
+    margin-top: 10px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    background-color: #f8e4ce;
+    transition: all 0.4s ease-out;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.sponsor-box:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 9px 9px 3px #4f4f4f;
+}
+
+.sponsor-logo {
+    margin: 10px;
+    width: 230px;
+    height: 200px;
+}
+
+.sponsor-desc {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.desc-box, .sponsor-info, .sponsor-name {
+    transition: all 0.4s ease-in-out;
+}
+
+.sponsor-box:hover .desc-box {
+    margin-left: 5px;
+    border-left: 5px solid rgb(255, 0, 0);
+}
+.sponsor-name{
+    margin-left: 12px;
+    text-align: left;
+    font-size: large;
+    margin-top: 13px;
+    font-weight: 900;
+}
+.sponsor-info{
+    margin-left: 12px;
+    text-align: left;
+    font-size: medium;
+    margin-bottom: 9px;
+}
+.sponsor-box:hover .sponsor-name {
+    margin-left: 12px;
+}
+
+.sponsor-box:hover .sponsor-info {
+    margin-left: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+.slide img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.old-sponsors {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .old-sponsors h2 {
+    color: #0D335D;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .old-sponsors h2:hover {
+    border-bottom: 4px solid red;
+  }
+  .past-slider{
+    width: 80%;
+    margin-left: 4.5%;
+  }
+@media (max-width: 624px) {
+    .sponsors-title h1 {
+        margin: 0 1rem;
+        font-size: 3rem;
+    }
+
+    .sponser-bg {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%; 
+    }
+
+    .mun-logo {
+        margin-bottom: 20px;
+        height: 170px;
+        width: 170px;
+    }
+
+    .present-box {
+        width: 90%; 
+        overflow: hidden; 
+    }
+    .present-box {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden; 
+    }
+    .sponsor-box {
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .sponsor-logo {
+        margin-left: 5%;
+        width: 90%; 
+        height: auto; 
+    }
+    
+}
+@media (max-width: 450px) {
+    .past-slider{
+        width: 70%;
+        margin-left:15%;
+      }
+}
+@media (max-width: 775px) {
+    .sponsors-title h1 {
+        margin: 0 3.5rem;
+    }
+}
