@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "./committee_data";
 import * as Dialog from "@radix-ui/react-dialog";
+import NavBar from "./NavBar";
 
 export default function Committees() {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,8 @@ export default function Committees() {
   };
 
   return (
+    <>
+    <NavBar/>
     <div className="bg-gradient-to-b no-scrollbar from-slate-400 to-slate-300 overflow-x-hidden">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto">
         {data.map((ele, ind) => (
@@ -87,5 +90,6 @@ export default function Committees() {
 {/* blank div */}
       </div>
     </div>
+    </>
   );
 }

@@ -53,6 +53,7 @@ export default function Team(props) {
     // };
   return (
     <>
+    <NavBar/>
     <div className="w-[100vw] no-scrollbar overflow-x-hidden overflow-y-hidden relative h-[50vh]">
         
                 <img src={headImg} alt="head" className="h-[100%] w-full bg-center brightness-50 object-cover " />

@@ -1,16 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <header>
       <div className="nav-bar bg-transparent relative z-1000">
-        <a className="element">Home</a>
-        <a className="element">About Us</a>
-        <a className="element">Apply</a>
-        <a className="element">Secretariat</a>
-        <a className="element">Sponsors</a>
+        <Link to='/'><a className="element">Home</a></Link>
+        <Link to='/'><a className="element">About Us</a></Link>
+        <Link to='/'><a className="element">Apply</a></Link>
+        <Link to='/team'><a className="element">Secretariat</a></Link>
+        <Link to='/sponsers'><a className="element">Sponsors</a></Link>
       </div>
     </header>
   );

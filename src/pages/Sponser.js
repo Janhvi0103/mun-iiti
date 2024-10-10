@@ -1,9 +1,11 @@
 import React from 'react'
 import '../css/Sponser.css'
 import PastSlider from '../components/PastSlider'
+import NavBar from '../components/NavBar'
 const Sponser = () => {
     return (
         <div>
+            <NavBar/>
             <div className="sponser-bg">
                 <div className="sponsors-title">
                     <h1 >OUR SPONSERS</h1>

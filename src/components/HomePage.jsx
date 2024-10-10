@@ -11,7 +11,6 @@ function HomePage() {
       <NavBar />
       {/* <CommitteesHeader /> */}
       {/* <Team/> */}
-      <Sponser/>
     </>
   );
 }

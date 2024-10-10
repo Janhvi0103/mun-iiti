@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
- // Import your CSS file for additional styling
+
 
 const images = [
   "http://mun.iiti.ac.in/assets/img/sponsors/unstop.png",
