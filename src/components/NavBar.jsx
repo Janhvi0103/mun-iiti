@@ -10,6 +10,7 @@ function NavBar() {
         <a className="element">About Us</a>
         <a className="element">Apply</a>
         <a className="element">Secretariat</a>
+        <a className="element">Sponsors</a>
       </div>
     </header>
   );
