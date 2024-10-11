@@ -1,0 +1,24 @@
+.navbar {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 25px;
+    width: 100%; /* Full width of the navbar */
+    z-index: 1; /* Ensure it's on top of the image */
+  }
+  
+.element {
+    color: white; /* Adjust text color */
+    text-decoration: none;
+    margin: 0 30px; /* Adjust the space between each item */
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif  ;
+  }
+  
+.element:hover {
+    color: lightgray;
+  }
+  
