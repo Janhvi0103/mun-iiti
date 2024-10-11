@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 import CommitteesHeader from "./Committees_Header";
 import Team from "../pages/Team";
 import Sponser from "../pages/Sponser";
+import Footer from "./Footer";
 
 function HomePage() {
   return (
@@ -11,6 +12,7 @@ function HomePage() {
       <NavBar />
       {/* <CommitteesHeader /> */}
       {/* <Team/> */}
+      <Footer/>
     </>
   );
 }
