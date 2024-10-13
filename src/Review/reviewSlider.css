@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base{
   body {
-    background-color: white;
+    background-color: #e6eaf5;
   }
 }
 .slick-slide > div{
