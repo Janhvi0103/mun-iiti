@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import data from "./committee_data";
 import * as Dialog from "@radix-ui/react-dialog";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export default function Committees() {
   const [open, setOpen] = useState(false);
@@ -90,6 +91,7 @@ export default function Committees() {
 {/* blank div */}
       </div>
     </div>
+    <Footer/>
     </>
   );
 }

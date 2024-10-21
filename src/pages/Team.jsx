@@ -16,6 +16,7 @@ import Teamcard from "../components/Teamcard"
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 // import { SiIconName } from 'react-icons/si';
 import "../css/team.css"
+import Footer from '../components/Footer';
 
 
 export default function Team(props) {
@@ -532,8 +533,9 @@ export default function Team(props) {
             </div>
           </section>
         </div>
+       
       </div>
-
+      <Footer/>
 
     </>
   )

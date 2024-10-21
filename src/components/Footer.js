@@ -67,9 +67,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t">
-        <p className="text-sm text-gray-400 text-center">
-          © Copyright {new Date().getFullYear()} Lorem Inc. All rights reserved.
-        </p>
+        {/* <p className="text-sm text-gray-400 text-center">
+          © Copyright {new Date().getFullYear()} MUN IITI
+        </p> */}
         <p className="text-sm text-gray-400 text-center">
           By MUN Team 2024
         </p>
