@@ -10,10 +10,10 @@ import HomePageComponent from "./HomePageComponent";
 function HomePage() {
   return (
     <div>
-      {/* <NavBar /> */}
-      <div className="overlay">
+      <NavBar />
+      {/* <div className="overlay"> */}
       <HomePageComponent />
-      </div>
+      {/* </div> */}
       <section>
       <TextSection />
       </section>

@@ -80,7 +80,7 @@ export default function Team(props) {
 
           <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-4xl pb-3 headingteam'>THE GENERALS </h1>
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-1 headingteam'>THE GENERALS </h1>
           </div>
 
           <div className='grid md:grid-cols-2 sm:grid-cols-2 gap-12 lg:gap-20 py-12 lg:px-64 ml-6' >
@@ -93,7 +93,10 @@ export default function Team(props) {
             <div className="flex-row min-h-screen items-center justify-center ">
               <div className=" items-center justify-center ">
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>THE CHIEFS</h1>
+              <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>CHIEFS </h1>
+          </div>
 
                 <Swiper
                   // spaceBetween={10}
@@ -140,7 +143,10 @@ export default function Team(props) {
                   </div>
                       </Swiper>
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>PUBLIC AFFAIRS </h1>
+                      <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>PUBLIC AFFAIRS </h1>
+          </div>
 
 
                 <Swiper
@@ -187,7 +193,10 @@ export default function Team(props) {
                   </div>
                 </Swiper>                                
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>MARKETING </h1>
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>MARKETING </h1>
+          </div>
 
 
                 <Swiper
@@ -236,7 +245,10 @@ export default function Team(props) {
 
 
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>FINANCE AFFAIRS </h1>
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>FINANCE AFFAIRS </h1>
+          </div>
 
 
                 <Swiper
@@ -284,7 +296,10 @@ export default function Team(props) {
                 </Swiper>
 
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>INFORMATION SERVICES </h1>
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>INFORMATION SERVICES </h1>
+          </div>
 
 
                 <Swiper
@@ -332,7 +347,10 @@ export default function Team(props) {
                 </Swiper>
 
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>DELEGATE AFFAIRS</h1>
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>DELEGATE AFFAIRS </h1>
+          </div>
 
 
                 <Swiper
@@ -380,7 +398,10 @@ export default function Team(props) {
                 </Swiper>
 
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>EXECUTIVE BOARD</h1>
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>EXECUTIVE BOARD </h1>
+          </div>
 
 
                 <Swiper
@@ -429,8 +450,10 @@ export default function Team(props) {
                 </Swiper>
 
 
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>VIDEO PRODUCTION</h1>
-
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>VIDEO PRODUCTION </h1>
+          </div>
 
                 <Swiper
                   modules={[Pagination, Autoplay]}
@@ -479,7 +502,10 @@ export default function Team(props) {
 
 
                 {/* intern Fair */}
-                <h1 className='text-white text-center font-bold pt-10 text-4xl pb-20 headingteam'>CREATIVE AND SOCIAL MEDIA </h1>
+                <div className="header">
+            {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
+            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>CREATIVE AND SOCIAL MEDIA </h1>
+          </div>
 
 
                 <Swiper
