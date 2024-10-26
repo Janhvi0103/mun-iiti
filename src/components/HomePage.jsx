@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client";
 import CommitteesHeader from "./Committees_Header";
 import Team from "../pages/Team";
 import Sponser from "../pages/Sponser";
+import TextSection from "../components/TextSection";
+import HomePageComponent from "./HomePageComponent";
 
 function HomePage() {
   return (
@@ -18,7 +20,7 @@ function HomePage() {
       
       {/* <CommitteesHeader /> */}
       {/* <Team/> */}
-    </>
+    </div>
   );
 }
 
