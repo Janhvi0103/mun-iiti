@@ -8,6 +8,7 @@ import "react-icons/fa"
 
 
 const PeopleCard = (props) => {
+  
 
     // const isMediumScreen = useMediaQuery({ query: '(min-width: 550px) and (max-width: 992px)' });
     return (
