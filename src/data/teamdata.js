@@ -3,7 +3,7 @@ import image2 from "../assets/team/dumyperson.jpg"
 const TeamsData={
     "Generals": [
         {
-            "Name": "Ayush Khadkekar",
+            "Name": "Name",
             "Position": "Position"  ,
             "Instagram": "https://instagram.com/sahilyardi260?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==",
             "LinkedIn": "https://www.linkedin.com/in/sahilyardi11",
