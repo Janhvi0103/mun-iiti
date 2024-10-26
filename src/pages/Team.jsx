@@ -9,7 +9,7 @@ import headImg from "../assets/team/team_header.webp"
 import mun from "../assets/committees/mun_b.png"
 import '../index.css';
 import NavBar from '../components/NavBar';
-import TeamsData from "../data/teamdata.json"
+import TeamsData from "../data/teamdata"
 
 import { useState,useEffect } from "react";
 import Teamcard from "../components/Teamcard"
@@ -85,7 +85,7 @@ export default function Team(props) {
 
           <div className='grid md:grid-cols-2 sm:grid-cols-2 gap-12 lg:gap-20 py-12 lg:px-64 ml-6' >
             {TeamsData.Generals.map((item, i) => (
-              <Teamcard name={item.Name} linkedin={item.LinkedIn} insta={item.Instagram} mail={item.GitHub} pic={`${process.env.PUBLIC_URL}${item.Pic}`} mainWidth={'100%'} imageHeight={'42vh'} imageWidth={'100%'} textWidth={'100%'} isProfessor={true} position={item.Position} />
+              <Teamcard name={item.Name} linkedin={item.LinkedIn} insta={item.Instagram} mail={item.GitHub}  pic={item.Pic} mainWidth={'100%'} imageHeight={'42vh'} imageWidth={'100%'} textWidth={'100%'} isProfessor={true} position={item.Position} />
             ))}
           </div>
 
