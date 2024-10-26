@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Sponser.css'
 import PastSlider from '../components/PastSlider'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 const Sponser = () => {
     return (
         <div>
@@ -91,6 +92,7 @@ const Sponser = () => {
                     <PastSlider />
                 </div>
             </section >
+            <Footer/>
         </div >
     )
 }
