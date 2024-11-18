@@ -11,31 +11,45 @@ const Navbar = () => {
   return (
     <header className="bg-navbar">
       <div className="nav-bar relative z-1000 flex items-center justify-between p-4">
-        <img src="http://mun.iiti.ac.in/assets/img/logowhite.png" alt="Logo" className="h-12 md:h-14" />
-        
-        <button 
-          className="md:hidden text-white focus:outline-none" 
+        <img
+          src="http://mun.iiti.ac.in/assets/img/logowhite.png"
+          alt="Logo"
+          className="h-12 md:h-14"
+        />
+
+        <button
+          className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           ) : (
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
             </svg>
           )}
         </button>
@@ -63,7 +77,11 @@ const Navbar = () => {
         </nav>
       </div>
 
-      <div className={`md:hidden transition-all duration-3000 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}>
+      <div
+        className={`md:hidden transition-all duration-3000 ease-in-out ${
+          isOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
+        }`}
+      >
         <nav className="flex flex-col items-center p-0">
           {[
             { name: 'Home', path: '/' },

@@ -1,0 +1,21 @@
+.faq-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; 
+}
+
+.faq-card > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.faq-card .bg-white {
+  height: auto; 
+  min-height: 150px; 
+}
+
+.faq-card.open .bg-white {
+  min-height: auto; 
+  margin-bottom: 40px; 
+}

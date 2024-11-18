@@ -12,9 +12,9 @@ function HomePage() {
   return (
     <div>
       <NavBar />
-      <div className="overlay">
+      {/* <div className="overlay"> */}
       <HomePageComponent />
-      </div>
+      {/* </div> */}
       <section>
       <TextSection />
       </section>
