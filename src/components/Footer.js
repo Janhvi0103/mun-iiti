@@ -1,8 +1,8 @@
 import React from 'react';
-
+import '../css/Footer.css'
 const Footer = () => {
   return (
-    <div className="px-4 pt-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-8 lg:px-8 bg-black text-white">
+    <div className="px-4 pt-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-8 lg:px-8 bg-footer text-white">
       <div className="flex justify-between flex-col space-x-8 sm:flex-row lg:flex-row">
         <div className="flex items-start justify-center mb-10 sm:justify-start">
           <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
@@ -19,18 +19,18 @@ const Footer = () => {
             <div className="flex">
               <p className="mr-1">Contact:</p>
               <div className='flex flex-col'>
-              <div>
-                Ohm Kumar (850-123-5021)
-              </div>
-              <div>
-                Other name(850-123-5021)
-              </div>
+                <div>
+                  Ohm Kumar (850-123-5021)
+                </div>
+                <div>
+                  Other name (850-123-5021)
+                </div>
               </div>
             </div>
             <div className="flex">
               <p className="mr-1">Email:</p>
               <div>
-              mun@iiti.ac.in
+                mun@iiti.ac.in
               </div>
             </div>
             <div className="flex">
@@ -67,9 +67,6 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t">
-        {/* <p className="text-sm text-gray-400 text-center">
-          © Copyright {new Date().getFullYear()} MUN IITI
-        </p> */}
         <p className="text-sm text-gray-400 text-center">
           By MUN Team 2024
         </p>

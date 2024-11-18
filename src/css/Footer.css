@@ -1,0 +1,16 @@
+.bg-footer {
+    background-color: #172D21;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #e63946; /* Hover color can be customized if needed */
+  }
+  

@@ -1,17 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import '../css/Navbar.css'
-import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
+import '../css/Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   return (
-    <header className="bg-black">
+    <header className="bg-navbar">
       <div className="nav-bar relative z-1000 flex items-center justify-between p-4">
         <img src="http://mun.iiti.ac.in/assets/img/logowhite.png" alt="Logo" className="h-12 md:h-14" />
         
@@ -42,26 +40,50 @@ const Navbar = () => {
           )}
         </button>
 
-        <nav className="hidden md:flex md:flex-row md:items-center">
-          <Link to='/' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Home</Link>
-          <Link to='/about' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/about' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>About Us</Link>
-          <Link to='/apply' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/apply' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Apply</Link>
-          <Link to='/team' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/team' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Secretariat</Link>
-          <Link to='/sponsors' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/sponsors' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Sponsors</Link>
-          <Link to='/committees' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/committees' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Committee</Link>
-          <Link to='/past-editions' className={`element  text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/past-editions' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Past Editions</Link>
+        <nav className="hidden md:flex md:flex-wrap md:items-center">
+          {[
+            { name: 'Home', path: '/' },
+            { name: 'About Us', path: '/about' },
+            { name: 'Apply', path: '/apply' },
+            { name: 'Secretariat', path: '/team' },
+            { name: 'Sponsors', path: '/sponsors' },
+            { name: 'Committee', path: '/committees' },
+            { name: 'Past Editions', path: '/past-editions' }
+          ].map((item, index) => (
+            <Link
+              key={index}
+              to={item.path}
+              className={`element text-white text-lg py-2 px-4 border-b-2 ${
+                location.pathname === item.path ? 'border-red-600' : 'border-transparent'
+              } hover:border-red-600 transition-colors duration-300`}
+            >
+              {item.name}
+            </Link>
+          ))}
         </nav>
       </div>
 
       <div className={`md:hidden transition-all duration-3000 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}>
         <nav className="flex flex-col items-center p-0">
-          <Link to='/' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Home</Link>
-          <Link to='/about' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/about' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>About Us</Link>
-          <Link to='/apply' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/apply' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Apply</Link>
-          <Link to='/team' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/team' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Secretariat</Link>
-          <Link to='/sponsors' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/sponsors' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Sponsors</Link>
-          <Link to='/committees' className={`element text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/committees' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Committee</Link>
-          <Link to='/past-editions' className={`element mb-3 text-white text-lg py-2 px-4 border-b-2 ${location.pathname === '/past-editions' ? 'border-red-600' : 'border-transparent'} hover:border-red-600 transition-colors duration-3000`}>Past Editions</Link>
+          {[
+            { name: 'Home', path: '/' },
+            { name: 'About Us', path: '/about' },
+            { name: 'Apply', path: '/apply' },
+            { name: 'Secretariat', path: '/team' },
+            { name: 'Sponsors', path: '/sponsors' },
+            { name: 'Committee', path: '/committees' },
+            { name: 'Past Editions', path: '/past-editions' }
+          ].map((item, index) => (
+            <Link
+              key={index}
+              to={item.path}
+              className={`element text-white text-lg py-2 px-4 border-b-2 ${
+                location.pathname === item.path ? 'border-red-600' : 'border-transparent'
+              } hover:border-red-600 transition-colors duration-300`}
+            >
+              {item.name}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

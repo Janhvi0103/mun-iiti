@@ -91,7 +91,7 @@ function HomePageComponent() {
     return(
         <div className="cComponent" style={divStyle}>
             <div style={overlayStyle}></div>
-               <NavBar />  
+               {/* <NavBar />   */}
                  <div style={contentContainerStyle}>
                  <img  src = {Logo} style={LogoStyle}/>
                  <div style={verticalLineStyle}></div>
