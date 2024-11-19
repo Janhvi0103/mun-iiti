@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import '../css/Navbar.css';
+import "../css/Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,19 +56,21 @@ const Navbar = () => {
 
         <nav className="hidden md:flex md:flex-wrap md:items-center">
           {[
-            { name: 'Home', path: '/' },
-            { name: 'About Us', path: '/about' },
-            { name: 'Apply', path: '/apply' },
-            { name: 'Secretariat', path: '/team' },
-            { name: 'Sponsors', path: '/sponsors' },
-            { name: 'Committee', path: '/committees' },
-            { name: 'Past Editions', path: '/past-editions' }
+            { name: "Home", path: "/" },
+            { name: "About Us", path: "/about" },
+            { name: "Apply", path: "/apply" },
+            { name: "Secretariat", path: "/team" },
+            { name: "Sponsors", path: "/sponsors" },
+            { name: "Committee", path: "/committees" },
+            { name: "Past Editions", path: "/past-edition" },
           ].map((item, index) => (
             <Link
               key={index}
               to={item.path}
               className={`element text-white text-lg py-2 px-4 border-b-2 ${
-                location.pathname === item.path ? 'border-red-600' : 'border-transparent'
+                location.pathname === item.path
+                  ? "border-red-600"
+                  : "border-transparent"
               } hover:border-red-600 transition-colors duration-300`}
             >
               {item.name}
@@ -84,19 +86,21 @@ const Navbar = () => {
       >
         <nav className="flex flex-col items-center p-0">
           {[
-            { name: 'Home', path: '/' },
-            { name: 'About Us', path: '/about' },
-            { name: 'Apply', path: '/apply' },
-            { name: 'Secretariat', path: '/team' },
-            { name: 'Sponsors', path: '/sponsors' },
-            { name: 'Committee', path: '/committees' },
-            { name: 'Past Editions', path: '/past-editions' }
+            { name: "Home", path: "/" },
+            { name: "About Us", path: "/about" },
+            { name: "Apply", path: "/apply" },
+            { name: "Secretariat", path: "/team" },
+            { name: "Sponsors", path: "/sponsors" },
+            { name: "Committee", path: "/committees" },
+            { name: "Past Editions", path: "/past-edition" },
           ].map((item, index) => (
             <Link
               key={index}
               to={item.path}
               className={`element text-white text-lg py-2 px-4 border-b-2 ${
-                location.pathname === item.path ? 'border-red-600' : 'border-transparent'
+                location.pathname === item.path
+                  ? "border-red-600"
+                  : "border-transparent"
               } hover:border-red-600 transition-colors duration-300`}
             >
               {item.name}

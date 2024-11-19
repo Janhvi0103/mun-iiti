@@ -6,7 +6,7 @@ import Sponser from "./pages/Sponser";
 import Team from "./pages/Team";
 import Committees from "./components/Committees";
 import Past from "./App_past";
-import About from './pages/About';
+import About from "./pages/About";
 function App() {
   return (
     <div className="App">
@@ -17,7 +17,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/committees" element={<Committees />} />
           <Route path="/past-edition" element={<Past />} />
-          <Route path='/about' element={<About/>}/>
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>
