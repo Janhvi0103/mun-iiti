@@ -1,4 +1,5 @@
 import React from "react";
+import AboutInfo from "./AboutInfo";
 
 function TextSection(){
     const ContainerStyle ={
@@ -9,6 +10,7 @@ function TextSection(){
         display: 'inline-block', // Makes the box wrap around the text
         padding: '40px 20px',
         marginTop: 0,
+        marginBottom: '0px', // Adds space below this section
     };
 
     const textSectionStyle = {
@@ -26,7 +28,8 @@ function TextSection(){
     };
 
     return (   
-        <div style={ContainerStyle}>
+        
+          <div style={ContainerStyle}>
             <div style={textSectionStyle}>
         <h2 style={{ fontWeight: 'bold', fontFamily: '  Arial, sans-serif', fontSize: '30px', paddingBottom: '10px' }}>Letter from the Secretery-General</h2>
             <p >
@@ -47,9 +50,16 @@ Looking forward to seeing you all at the eighth edition of IIT Indore Model Unit
 <h4 style={{ fontWeight: 'bold', fontFamily: 'Arial, sans-serif', fontSize: '15px' }}>Yours sincerely,</h4>
 <h3 style={{ fontWeight: 'bold', fontFamily: 'Arial, sans-serif', fontSize: '15px' }}>Ohm Kumar</h3>
 <h3 style= {{ fontWeight: 'bold', fontFamily: 'Arial, sans-serif', fontSize: '15px' }}>Secretary-General, IIT Indore MUN 2025</h3>
-            
+
         </div>
         </div>
+        
+      
+        
+    
+        
+        
+        
          
     );
 

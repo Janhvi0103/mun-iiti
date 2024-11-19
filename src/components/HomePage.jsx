@@ -7,6 +7,7 @@ import Sponser from "../pages/Sponser";
 import TextSection from "../components/TextSection";
 import HomePageComponent from "./HomePageComponent";
 import Footer from "./Footer";
+import AboutInfo from "./AboutInfo";
 
 function HomePage() {
   return (
@@ -15,8 +16,9 @@ function HomePage() {
       {/* <div className="overlay"> */}
       <HomePageComponent />
       {/* </div> */}
-      <section>
+      <section >
       <TextSection />
+      {/* <AboutInfo /> */}
       </section>
       <Footer/>
       {/* <CommitteesHeader /> */}

@@ -9,7 +9,9 @@ const Letter = () => {
         backgroundPosition: 'center',
         padding: '50px 0',
         display: 'flex',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh'
     };
 
     const letterBoxStyle = {
@@ -24,7 +26,7 @@ const Letter = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundColor: 'rgba(255, 224, 189, 0.8)', // skin color as a fallback
-        textAlign: 'left'
+        textAlign: 'center'
     };
 
     const h2Style = {
