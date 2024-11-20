@@ -16,7 +16,7 @@ function About() {
           {/* <Glimpse/>
           <Glimpse/>
           <Glimpse/> */}
-          <Letter/>
+          {/* <Letter/> */}
           <Cards config={conf2}/>
           <FaqCard />
           <Footer/>
