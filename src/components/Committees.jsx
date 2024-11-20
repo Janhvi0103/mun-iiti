@@ -4,6 +4,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import bg from "../assets/committees/bg1.jpg";
+import logo from "../assets/about/logowhite.png"
 
 export default function Committees() {
   const [open, setOpen] = useState(false);
@@ -33,9 +34,7 @@ export default function Committees() {
         <div className="relative z-10 no-scrollbar overflow-x-hidden h-full flex flex-col items-center justify-center text-white">
           <div className="relative w-[80vw] h-[80vh] mx-auto flex justify-center items-center top-[0vh]">
             {/* Centered Title */}
-            <h1 className="absolute text-3xl lg:text-5xl font-bold text-green-700">
-              COMMITTEES
-            </h1>
+            <img src={logo} width={"220px"} height={"220px"}/>
 
             {data.map((ele, ind) => {
               const angle = (360 / data.length) * ind;
@@ -54,8 +53,8 @@ export default function Committees() {
                       >
                         <div className="group-active:brightness-200">
                           <img
-                            height={"300px"}
-                            width={"300px"}
+                            height={"200px"}
+                            width={"200px"}
                             src={ele.img}
                             className="mx-auto my-auto"
                           />
