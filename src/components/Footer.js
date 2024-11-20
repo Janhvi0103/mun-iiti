@@ -13,11 +13,11 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="flex flex-col text-sm justify-center md:w-96 sm:ml-4">
-          <p className="text-base font-bold tracking-wide text-2xl border-b-4 border-red-600 w-20">Contact</p>
-          <div className="flex flex-col space-y-2">
+        <div className="flex flex-col justify-center md:w-96 sm:ml-4">
+          <span className=" font-extrabold text-2xl mb-4 w-20">Contact</span>
+          <div className="flex flex-col ">
             <div className="flex">
-              <p className="mr-1">Contact:</p>
+              <p className="mr-1 font-bold">Contact:</p>
               <div className='flex flex-col'>
                 <div>
                   Ohm Kumar (850-123-5021)
@@ -28,21 +28,21 @@ const Footer = () => {
               </div>
             </div>
             <div className="flex">
-              <p className="mr-1">Email:</p>
+              <p className="mr-1 font-bold">Email:</p>
               <div>
                 mun@iiti.ac.in
               </div>
             </div>
             <div className="flex">
-              <p className="mr-1">Address:</p>
+              <p className="mr-1 font-bold">Address:</p>
               <div className='text-left'>
                 Indian Institute of Technology-Indore, Khandwa Rd, Simrol, Madhya Pradesh 453552
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <span className="font-bold mb-3 text-2xl border-b-4 border-red-600 w-16">Social</span>
+        <div className='social'>
+          <span className="font-extrabold text-2xl w-16">Social</span>
           <div className="flex flex-col mt-3 space-y-2">
             <a href="https://www.instagram.com/muniiti/" className="flex items-center text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
               <svg viewBox="0 0 30 30" fill="currentColor" className="h-6 mr-2">

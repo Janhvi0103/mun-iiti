@@ -1,84 +1,80 @@
-.navbar {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    background-color: rgba(255, 255, 255, 0); 
-    /* background-color: none; */
-    padding: 25px;
-    width: 100%; /* Full width of the navbar */
-    z-index: 1; /* Ensure it's on top of the image */
-  }
-  
-.element {
-    color: white; /* Adjust text color */
-    text-decoration: none;
-    margin: 0 30px; /* Adjust the space between each item */
-    font-size: 16px;
-    font-weight: lighter;
-    text-align: center ;
-    font-family:Verdana, Geneva, Tahoma, sans-serif  ;
-  }
-  
-.element:hover {
-    color: lightgray;
-  }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .nav-bar {
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center; 
-    gap: 1rem; 
-  }
-
-  nav.md\\:flex {
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 1.5rem; 
-    width: 100%;
-  }
-
-  nav.md\\:flex a {
-    text-align: center; 
-  }
-}
 
 .bg-navbar {
-  background-color: #010300;
-  
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bg-navbar.bg-solid {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav-bar {
-  position: relative;
-  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  
+  z-index: 1000;
 }
 
 .element {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-bottom: 2px solid transparent;
   font-size: 1.125rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 1.5rem;
 }
 
 .element:hover {
+  color: lightgray;
   border-bottom: 2px solid red;
 }
 
-.md\:hidden {
-  display: none;
-}
-
 @media (max-width: 768px) {
-  .md\:hidden {
+  .bg-navbar {
+    position: relative;
+    background-color: rgba(0, 0, 0, 1) !important; 
+  }
+  
+  .md\\:hidden {
     display: block;
   }
+
   .hidden {
     display: none;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  nav.md\\:flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  nav.md\\:flex a {
+    text-align: center;
   }
 }
