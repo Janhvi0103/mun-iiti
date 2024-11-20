@@ -11,6 +11,10 @@
   }
   
   a:hover {
-    color: #e63946; /* Hover color can be customized if needed */
+    color: #e63946; 
   }
+
+  .social{
+    margin-right: 100px !important;
+  } 
   

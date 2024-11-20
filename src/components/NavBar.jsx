@@ -1,22 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../css/Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-navbar">
-      <div className="nav-bar relative z-1000 flex items-center justify-between p-4">
+    <header className={`bg-navbar ${isScrolled ? "bg-solid" : ""}`}>
+      <div className="nav-bar flex items-center justify-between p-4">
         <img
           src="http://mun.iiti.ac.in/assets/img/logowhite.png"
           alt="Logo"
           className="h-12 md:h-14"
         />
-
         <button
           className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +62,6 @@ const Navbar = () => {
             </svg>
           )}
         </button>
-
         <nav className="hidden md:flex md:flex-wrap md:items-center">
           {[
             { name: "Home", path: "/" },
@@ -78,9 +86,8 @@ const Navbar = () => {
           ))}
         </nav>
       </div>
-
       <div
-        className={`md:hidden transition-all duration-3000 ease-in-out ${
+        className={`md:hidden transition-all duration-300 ${
           isOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
         }`}
       >
