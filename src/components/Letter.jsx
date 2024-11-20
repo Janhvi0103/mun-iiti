@@ -25,7 +25,7 @@ const Letter = () => {
         backgroundImage: `url(${imgscr})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundColor: 'rgba(255, 224, 189, 0.8)', // skin color as a fallback
+        backgroundColor: 'rgba(255, 224, 189, 0.8)', 
         textAlign: 'center'
     };
 
