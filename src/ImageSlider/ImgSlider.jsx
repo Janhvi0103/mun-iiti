@@ -51,16 +51,14 @@ const ImageSlider = () => {
   }, []);
 
   return (
-    <div className="slider-wrapper">
-      <div className="slider-container">
-        <img src={images[currentIndex]} alt="slider" className="slider-image" />
-        <button className="slider-button left" onClick={goToPrevious}>
-          &#10094; {/* Left arrow symbol */}
-        </button>
-        <button className="slider-button right" onClick={goToNext}>
-          &#10095; {/* Right arrow symbol */}
-        </button>
-      </div>
+    <div className="slider-container">
+      <img src={images[currentIndex]} alt="slider" className="slider-image" />
+      <button className="slider-button left" onClick={goToPrevious}>
+        &#10094; {/* Left arrow symbol */}
+      </button>
+      <button className="slider-button right" onClick={goToNext}>
+        &#10095; {/* Right arrow symbol */}
+      </button>
     </div>
   );
 };

@@ -101,18 +101,22 @@ function ReviewSlider() {
   return (
     <div className="bg-white">
       <div className="w-3/4 m-auto mt-20">
-        {/* <h2 className="text-blue-500 text-center text-3xl font-semibold mb-6">
-          Testimonials
-        </h2> */}
         <div>
           <Slider {...settings}>
             {data.map((d) => (
               <div
                 key={d.name}
-                className="bg-blue-600 h-[450px] text-white rounded-xl"
+                className="bg-white h-[450px] text-black rounded-xl border shadow-sm transform transition-transform duration-300 hover:scale-105 hover:shadow-[0px_10px_15px_rgba(255,0,150,0.3),0px_15px_20px_rgba(0,255,255,0.3)] group cursor-pointer"
               >
-                <div className="h-56 rounded-t-xl bg-blue-700 flex justify-center items-center">
-                  <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
+                <div className="h-56 rounded-t-xl bg-white flex justify-center items-center relative cursor-pointer">
+                  <div className="h-44 w-44 rounded-full overflow-hidden relative group-hover:animate-pulse">
+                    <img
+                      src={d.img}
+                      alt={d.name}
+                      className="h-full w-full rounded-full relative"
+                    />
+                    <div className="absolute inset-0 rounded-full bg-green-300 opacity-0 group-hover:opacity-50 blur-md transition-opacity duration-300"></div>
+                  </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-4 p-4">
                   <p className="text-xl font-semibold">{d.name}</p>

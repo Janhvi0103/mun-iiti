@@ -1,26 +1,32 @@
-.slider-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #022B43; /* New background color */
-}
-
 .slider-container {
-  width: 1000px; /* Increased width */
-  height: 600px; /* Increased height */
-  background-color: brown;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 1000px; /* Limit maximum width */
+  height: 600px; /* Fixed height */
+  background-color: white; /* White background */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   overflow: hidden;
   position: relative;
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .slider-image {
-  width: 100%;
-  height: auto;
-  transition: opacity 1s ease-in-out;
+  max-width: 80%; /* Fit image inside the container */
+  max-height: 100%; /* Prevent overflow */
+  margin-bottom: 20px; /* Add margin from the bottom */
+  border-radius: 20px; /* Rounded corners */
+  border: 5px solid black; /* Initial border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.4s ease, border-color 0.4s ease; /* Smooth transform and border color change */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.slider-image:hover {
+  transform: scale(1.1); /* Pop out effect */
+  border-color: #1B4242; /* Change border color to dark green */
+  box-shadow: 0px 10px 20px rgba(27, 66, 66, 0.5); /* Add shadow for a floating effect */
+  cursor: pointer; /* Change the cursor to pointer */
 }
 
 .slider-button {
@@ -33,12 +39,13 @@
   padding: 10px;
   cursor: pointer;
   font-size: 16px;
+  z-index: 10; /* Ensure buttons are above the image */
 }
 
 .slider-button.left {
-  left: 10px;
+  left: 20px;
 }
 
 .slider-button.right {
-  right: 10px;
+  right: 20px;
 }
