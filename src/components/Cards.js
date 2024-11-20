@@ -5,13 +5,12 @@ import image6 from '../assets/about/6.jpg';
 import imageCal from '../assets/about/cal.jpg';
 import imageEligibility from '../assets/about/Eligibility.jpg';
 
-// Image mapping object
 const imageMap = {
   "1": image1,
   "6": image6,
   "cal": imageCal,
   "Eligibility": imageEligibility,
-  "default-image": image1, // Fallback image
+  "default-image": image1, 
 };
 
 function Cards({ config }) {
@@ -22,9 +21,9 @@ function Cards({ config }) {
           <div className="custom-card" style={{ width: 'auto', height: '350px' }}>
             <img
               style={{ height: '200px', width: '100%', objectFit: 'fill' }}
-              src={imageMap[eachCard.img] || imageMap["default-image"]} // Use imageMap here
+              src={imageMap[eachCard.img] || imageMap["default-image"]} 
               alt={eachCard.title || 'Image'}
-              loading="lazy" // Enable lazy loading for better performance
+              loading="lazy" 
             />
             <div className="custom-card-body" style={{ padding: '10px' }}>
               {eachCard.title && <h5 className="custom-card-title">{eachCard.title}</h5>}

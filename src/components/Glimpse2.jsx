@@ -33,14 +33,14 @@ export default function Glimpse() {
 
 const stylesg = {
   container: {
-    margin: '20px auto', /* Added margin: 20px auto; for top/bottom and centering */
+    margin: '20px auto', 
     background: 'linear-gradient(90deg, #01091E 64.92%, #133762 95.28%)',
     color: 'white',
     borderRadius: '30px',
     textAlign: 'center',
     fontFamily: 'Arial, sans-serif',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-    padding: '20px', /* Added padding to maintain spacing */
+    padding: '20px', 
     width: '100%'
   },
   heading: {
