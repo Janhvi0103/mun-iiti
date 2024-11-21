@@ -7,8 +7,9 @@
   flex-direction: column;
   align-items: center;
   z-index: -100;
+  
   /* background:linear-gradient(to right,rgb(32, 33, 33),rgb(88, 210, 255)) */
-  background-color: #022b43;
+  /* background-color: #022b43; */
   /* border-radius: 40px; */
 }
 .intro {
@@ -31,6 +32,7 @@
   margin-bottom: 20px;
 }
 
+
 .headingteam::before {
   content: "";
   position: absolute;
@@ -40,12 +42,18 @@
   height: 3px; /* Adjust thickness of underline */
   background-color: currentColor; /* Matches the color of the text */
   transition: width 0.3s ease; /* Adjust the speed as desired */
+  background-color: rgba(34, 197, 94, 0.8);
   /* text-underline-offset: 14px; */
 }
 
 .headingteam:hover::before {
   width: 100%; /* Expands underline to full width */
   display: flex;
+  box-shadow: 
+    0 15px 30px rgba(0, 0, 0, 0.3),       /* Darker shadow for depth */
+    0 25px 50px rgba(0, 0, 0, 0.15),      /* Larger shadow */
+    0 0 30px rgba(34, 197, 94, 0.8),      /* Bright green glow */
+    0 0 60px rgba(16, 185, 129, 0.6);     /* Softer green glow */
 }
 .header
 {
@@ -70,7 +78,8 @@
   /* box-shadow: -10px -15px 10px 2px rgb(0, 0, 0); */
   /* box-shadow: 10px 10px 10px 2px rgb(0, 0, 0); */
   /* animation: glow 1.5s infinite alternate; */
-  border: 2px solid rgb(255, 255, 255);
+  /* border: 2px solid rgb(255, 255, 255); */
+  border-radius: 50%;
   box-shadow: 
       0 5px 5px rgba(255, 255, 255, 0.7),  /* Main shadow */
       0 4px 5px rgba(255, 255, 255, 0.7);  /* Larger, softer shadow for lift */ 
@@ -97,12 +106,13 @@
   /* background: linear-gradient(205deg,#D94625,#A63D33,#0D0D0D,#733D3D,#F28627); */
   z-index: -10;
   /* filter: blur(5px); */
-  border: 2px solid rgb(255, 255, 255);
+  /* border: 2px solid rgb(255, 255, 255); */
   box-shadow: 
       0 5px 5px rgba(255, 255, 255, 0.7),  /* Main shadow */
       0 4px 5px rgba(255, 255, 255, 0.7);  /* Larger, softer shadow for lift */ 
 
   border-radius: 20px;
+ 
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   /* animation: scaling 1s linear infinite alternate; */
 }
@@ -129,7 +139,7 @@
   box-shadow: 
       0 5px 5px rgba(255, 255, 255, 0.7),  /* Main shadow */
       0 4px 5px rgba(255, 255, 255, 0.7);  /* Larger, softer shadow for lift */ 
-  border-radius: 20px;
+      border-radius: 50%;
   z-index: -10;
 }
 .card:hover {
@@ -177,9 +187,9 @@
 .card:hover .content {
   transform: scale(1);
   bottom: 0px;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   width: 100%;
-  height: 50%;
+  height: 60%;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }

@@ -15,7 +15,7 @@ function AboutInfo(){
         marginTop: "40px"
       }}
     >
-      <h2 style={{ textAlign: "center", marginBottom: "0px" }}>
+      <h2 style={{ textAlign: "center", marginBottom: "0px",fontFamily:"Trebuchet MS" }}>
         About Us
       </h2>
       <p style={{ maxWidth: "600px", textAlign: "justify" }}>

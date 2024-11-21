@@ -11,7 +11,7 @@ const Sponser = () => {
             <NavBar />
             <div className="sponser-bg">
                 <div className="sponsors-title">
-                    <h1>OUR SPONSORS</h1>
+                    <h1 style={{fontFamily:"Trebuchet MS"}}>OUR SPONSORS</h1>
                 </div>
                 <div className="logo">
                     <img src="http://mun.iiti.ac.in/assets/img/logowhite.png" alt="" className='mun-logo' />

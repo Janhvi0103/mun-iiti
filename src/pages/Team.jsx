@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-import headImg from "../assets/team/team_header.webp"
+import headImg from "../assets/team/MUNHome.jpg"
 import mun from "../assets/committees/mun_b.png"
 import '../index.css';
 import NavBar from '../components/NavBar';
@@ -61,7 +61,7 @@ export default function Team(props) {
                 
                 <div className="absolute animate__animated animate__fadeInRight md:top-[11vh] top-[8vh] md:left-[5vh] left-[1vh] lg:left-[25vh] w-[90%]">
                 
-                    <div id="heading" className="shadow-3xl font-semibold brightness-105 text-white text-4xl lg:text-7xl inline">SECRETARIAT 2024</div>
+                    <div id="heading" className="shadow-3xl font-semibold brightness-105 text-white text-4xl lg:text-7xl inline" style={{fontFamily:"Trebuchet MS"}}>SECRETARIAT 2024</div>
                     <img src={mun} alt="mun-logo" className="lg:w-[180px] w-[95px] inline mx-14 my-4 sm:my-0"/>
                 </div>
                 
@@ -80,7 +80,7 @@ export default function Team(props) {
 
           <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-1 headingteam'>THE GENERALS </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-1 headingteam'>THE GENERALS </h1>
           </div>
 
           <div className='grid md:grid-cols-2 sm:grid-cols-2 gap-12 lg:gap-20 py-12 lg:px-64 ml-6' >
@@ -95,7 +95,7 @@ export default function Team(props) {
 
               <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>CHIEFS </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>CHIEFS </h1>
           </div>
 
                 <Swiper
@@ -145,7 +145,7 @@ export default function Team(props) {
 
                       <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>PUBLIC AFFAIRS </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>PUBLIC AFFAIRS </h1>
           </div>
 
 
@@ -195,7 +195,7 @@ export default function Team(props) {
 
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>MARKETING </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>MARKETING </h1>
           </div>
 
 
@@ -247,7 +247,7 @@ export default function Team(props) {
 
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>FINANCE AFFAIRS </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>FINANCE AFFAIRS </h1>
           </div>
 
 
@@ -298,7 +298,7 @@ export default function Team(props) {
 
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>INFORMATION SERVICES </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>INFORMATION SERVICES </h1>
           </div>
 
 
@@ -349,7 +349,7 @@ export default function Team(props) {
 
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>DELEGATE AFFAIRS </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>DELEGATE AFFAIRS </h1>
           </div>
 
 
@@ -400,7 +400,7 @@ export default function Team(props) {
 
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>EXECUTIVE BOARD </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>EXECUTIVE BOARD </h1>
           </div>
 
 
@@ -452,7 +452,7 @@ export default function Team(props) {
 
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>VIDEO PRODUCTION </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>VIDEO PRODUCTION </h1>
           </div>
 
                 <Swiper
@@ -504,7 +504,7 @@ export default function Team(props) {
                 {/* intern Fair */}
                 <div className="header">
             {/* <h1><span className={Team.text_color}>Our</span><span className={Team.text_white}> Team</span></h1> */}
-            <h1 style={{textAlign:"center"}} className='text-white text-center font-bold pt-10 text-3xl pb-3 headingteam'>CREATIVE AND SOCIAL MEDIA </h1>
+            <h1 style={{textAlign:"center"}} className='text-black text-center font-bold pt-10 text-3xl pb-3 headingteam'>CREATIVE AND SOCIAL MEDIA </h1>
           </div>
 
 

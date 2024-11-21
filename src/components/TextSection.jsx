@@ -7,6 +7,7 @@ function TextSection(){
         justifyContent: 'center', // Center horizontally
         alignItems: 'top', // Center vertically
         height: '100vh', // Full height of the viewport
+        width:"100%",
         display: 'inline-block', // Makes the box wrap around the text
         padding: '40px 20px',
         marginTop: 0,
@@ -28,7 +29,7 @@ function TextSection(){
     };
 
     return (   
-        
+        <div style={{width:"100%",height:"100%",display:"flex",justifyContent:"center"}}>
           <div style={ContainerStyle}>
             <div style={textSectionStyle}>
         <h2 style={{ fontWeight: 'bold', fontFamily: '  Arial, sans-serif', fontSize: '30px', paddingBottom: '10px' }}>Letter from the Secretery-General</h2>
@@ -53,7 +54,7 @@ Looking forward to seeing you all at the eighth edition of IIT Indore Model Unit
 
         </div>
         </div>
-        
+        </div>
       
         
     

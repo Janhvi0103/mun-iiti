@@ -58,7 +58,7 @@ function HomePageComponent() {
 
         const textStyle1 = {
             fontWeight: 'bold',
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Trebuchet MS',
             fontSize: '60px',
             color: 'white',
             flexDirection : 'column',
@@ -68,7 +68,7 @@ function HomePageComponent() {
         };
         const textStyle2 = {
             fontWeight: 'bold',
-            fontFamily: 'sans-serif',
+            fontFamily: 'Trebuchet MS',
             fontSize: '20px',
             color: 'white',
             flexDirection : 'column',
@@ -78,7 +78,7 @@ function HomePageComponent() {
 
         const yearStyle = {
             fontWeight: 'bold',
-            fontFamily: 'sans-serif',
+            fontFamily: 'Trebuchet MS',
             fontSize: '90px',
             color: 'white',
             flexDirection : 'column',
