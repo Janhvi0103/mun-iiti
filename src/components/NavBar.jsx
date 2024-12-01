@@ -63,10 +63,9 @@ const Navbar = () => {
           )}
         </button>
         <nav className="hidden md:flex md:flex-wrap md:items-center">
-          {[
+          {[ 
             { name: "Home", path: "/" },
             { name: "About Us", path: "/about" },
-            { name: "Apply", path: "/apply" },
             { name: "Secretariat", path: "/team" },
             { name: "Sponsors", path: "/sponsors" },
             { name: "Committee", path: "/committees" },
@@ -84,6 +83,12 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
+          <Link
+            to="https://unstop.com/conferences/model-united-nations-80-iit-indore-iit-indore-1193062"
+            className="register-button text-white text-lg py-2 px-4 border-2 border-transparent rounded-lg hover:bg-green-900 hover:border-green-900 transition-all duration-300"
+          >
+            Register
+          </Link>
         </nav>
       </div>
       <div
@@ -92,10 +97,9 @@ const Navbar = () => {
         }`}
       >
         <nav className="flex flex-col items-center p-0">
-          {[
+          {[ 
             { name: "Home", path: "/" },
             { name: "About Us", path: "/about" },
-            { name: "Apply", path: "/apply" },
             { name: "Secretariat", path: "/team" },
             { name: "Sponsors", path: "/sponsors" },
             { name: "Committee", path: "/committees" },
@@ -113,6 +117,12 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
+          <Link
+            to="https://unstop.com/conferences/model-united-nations-80-iit-indore-iit-indore-1193062"
+            className="register-button text-white text-lg py-2 px-4 border-2 border-transparent rounded-lg hover:bg-green-900 hover:border-green-900 transition-all duration-300"
+          >
+            Register
+          </Link>
         </nav>
       </div>
     </header>

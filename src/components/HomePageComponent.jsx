@@ -99,8 +99,10 @@ function HomePageComponent() {
                        <h1 style={textStyle1}>IITI MUN</h1>
                        <h1 style ={yearStyle}> 2024</h1>
                        <h1 style={textStyle2}>Diplomacy. Debate. Deliver</h1>
+                       
                     </div>
                  </div>
+                 
         </div>
  );
      }
