@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Footer.css'
+import Logo from '../assets/committees/mun_b.png'
 const Footer = () => {
   return (
     <div className="px-4 pt-16 mx-auto sm:max-w-full md:max-w-full lg:max-w-full md:px-8 lg:px-8 bg-footer text-white">
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="flex items-start justify-center mb-10 sm:justify-start">
           <a href="/" aria-label="Go home" title="Company" className="inline-flex items-center">
             <img 
-              src="http://mun.iiti.ac.in/assets/img/logowhite.png" 
+              src={Logo}
               alt="Logo" 
               className="h-48 w-48 mr-2" 
             />
@@ -20,10 +21,10 @@ const Footer = () => {
               <p className="mr-1 font-bold">Contact:</p>
               <div className='flex flex-col'>
                 <div>
-                  Ohm Kumar (850-123-5021)
+                  Ohm Kumar (+91 83404 99016)
                 </div>
                 <div>
-                  Other name (850-123-5021)
+                  Kumar Anmol (+91 62877 79724)
                 </div>
               </div>
             </div>

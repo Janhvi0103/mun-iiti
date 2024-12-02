@@ -5,11 +5,11 @@ import 'slick-carousel/slick/slick-theme.css';
 
 
 const images = [
-  "http://mun.iiti.ac.in/assets/img/sponsors/unstop.png",
-  "http://mun.iiti.ac.in/assets/img/sponsors/sunkom.jpg",
-  "http://mun.iiti.ac.in/assets/img/sponsors/ED.jpg",
-  "http://mun.iiti.ac.in/assets/img/sponsors/Youvalogo.jpg",
-  "http://mun.iiti.ac.in/assets/img/sponsors/wiley.png",
+  "https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL2RhcmUyY29tcGV0ZWNvbS5qcGc.png",
+  "https://tse2.mm.bing.net/th?id=OIP._mqu7Qpqx_xfTYel9rmoCgAAAA&pid=Api&P=0&h=180",
+  "https://tse1.mm.bing.net/th?id=OIP.PW-nNQoxd0Dmnvm3vZaVkQAAAA&pid=Api&P=0&h=180",
+  "https://bestmediainfo.com/uploads/2020/01/Youva-Logo_4.jpg",
+  "http://logotypes101.com/logos/840/A849138A8845804B1C8DCFEC11F21709/Wiley.png",
   "https://th.bing.com/th/id/OIP.-khNFXrRjsldQY66_N7BrAAAAA?rs=1&pid=ImgDetMain",
   "https://img.studydekho.com/uploads/c/2023/6/97981-22273-c-3-180x.jpg",
   "https://media.9curry.com/uploads/organization/image/2116/canara-bank-logo.png"

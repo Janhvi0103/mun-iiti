@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../css/Navbar.css";
-
+import Logo from '../assets/committees/mun_b.png'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
     <header className={`bg-navbar ${isScrolled ? "bg-solid" : ""}`}>
       <div className="nav-bar flex items-center justify-between p-4">
         <img
-          src="http://mun.iiti.ac.in/assets/img/logowhite.png"
+          src={Logo}
           alt="Logo"
           className="h-12 md:h-14"
         />

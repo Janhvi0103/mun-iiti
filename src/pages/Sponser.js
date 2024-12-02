@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import dubeat from '../assets/sponser/WhatsApp Image 2024-11-18 at 21.33.51_29eec085.jpg'
 import shape from '../assets/sponser/WhatsApp Image 2024-11-18 at 21.33.51_3b5bcfab.jpg'
+import Logo from '../assets/committees/mun_b.png'
 const Sponser = () => {
     return (
         <div>
@@ -14,7 +15,7 @@ const Sponser = () => {
                     <h1 style={{fontFamily:"Trebuchet MS"}}>OUR SPONSORS</h1>
                 </div>
                 <div className="logo">
-                    <img src="http://mun.iiti.ac.in/assets/img/logowhite.png" alt="" className='mun-logo' />
+                    <img src={Logo} alt="" className='mun-logo' />
                 </div>
             </div>
             <section className="sponsers-container">
