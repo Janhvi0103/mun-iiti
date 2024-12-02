@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .text-section {
+        font-size: 2.5vw; /* Smaller font size for medium screens */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section {
+        font-size: 2vw; /* Even smaller font size for small screens */
+        padding: 10px;
+    }
+}

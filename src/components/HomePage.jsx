@@ -1,28 +1,35 @@
 import NavBar from "./NavBar";
 import React from "react";
-import ReactDOM from "react-dom/client";
-import CommitteesHeader from "./Committees_Header";
-import Team from "../pages/Team";
-import Sponser from "../pages/Sponser";
-import TextSection from "../components/TextSection";
 import HomePageComponent from "./HomePageComponent";
+import TextSection from "../components/TextSection";
 import Footer from "./Footer";
-import AboutInfo from "./AboutInfo";
 
 function HomePage() {
+  const sectionStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh', 
+    padding: '0 20px', 
+    boxSizing: 'border-box'
+  };
+
+  const textSectionStyle = {
+    maxWidth: '1200px', 
+    width: '100%',
+    textAlign: 'center', // Optional: If you want the text inside to be centered
+  };
+
   return (
     <div>
       <NavBar />
-      {/* <div className="overlay"> */}
       <HomePageComponent />
-      {/* </div> */}
-      <section >
-      <TextSection />
-      {/* <AboutInfo /> */}
+      <section style={sectionStyle}>
+        <div style={textSectionStyle}>
+          <TextSection />
+        </div>
       </section>
-      <Footer/>
-      {/* <CommitteesHeader /> */}
-      {/* <Team/> */}
+      <Footer />
     </div>
   );
 }
