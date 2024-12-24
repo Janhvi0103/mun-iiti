@@ -4,7 +4,7 @@ import PastSlider from '../components/PastSlider'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import dubeat from '../assets/sponser/WhatsApp Image 2024-11-18 at 21.33.51_29eec085.jpg'
-import shape from '../assets/sponser/WhatsApp Image 2024-11-18 at 21.33.51_3b5bcfab.jpg'
+import shape from '../assets/sponser/WhatsApp Image 2024-12-24 at 17.28.30_bb6a843a.jpg'
 import Logo from '../assets/committees/mun_b.png'
 const Sponser = () => {
     return (
