@@ -140,6 +140,19 @@ const Sponser = () => {
                                 </div>
                             </div>
                         </a>
+                        <a href="https://www.easemytrip.com/" target="_blank">
+                            <div className="sponsor-box">
+                                <div className="logo-box">
+                                    <img className="sponsor-logo" src="https://play-lh.googleusercontent.com/9xMTcIms0WtWj8Ra4Vhlfm3Dz8zrd53tfrgyyA5kNLHnap2qjSrPDshm3YfKLElY4w" alt="Ease My Trip" />
+                                </div>
+                                <div className="sponsor-desc">
+                                    <div className="desc-box">
+                                        <h3 className="sponsor-name">Ease My Trip</h3>
+                                        <h4 className="sponsor-info">Best Deals on Flights,Hotel</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div className="old-sponsors">
